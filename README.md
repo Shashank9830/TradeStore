@@ -25,7 +25,7 @@ A SpringBoot application that covers all these requirements.
 
 Application is exposed to the user via a REST API from where the user can send trade information using any REST API testing tool like Postman. 
 
-The request must be HTTP POST to http://localhost:8080/api/v1/barcalys/store/trades
+The request must be HTTP POST to http://localhost:8080/api/v1/barclays/store/trades
 
 Initial state of database:
 
@@ -88,29 +88,35 @@ DB state after fresh trade is processed.
 
 ## Steps to execute
 
+```
 This is a Maven project and uses Java 11. Load the code from **BarclaysTradeStore** folder. Build it using Maven. Test cases are written which will get auto executed during the build phase.
+```
 
+```
 Please use **BarclaysTradeStore/src/main/resources/table_creation.sql** file for creating and populating the MySQL database on your system.
 
 MySQL related configuration is present in **BarclaysTradeStore/src/main/resources/application.properties**. Update the port, db name, username and password according to your MySQL settings.
+```
 
 Start the application as a Java/SpringBoot application from your IDE.
 
 Entry point for the application is present at:
 
-**BarclaysTradeStore/src/main/java/com/barclays/BarclaysTradeStoreApplication.java**
+```BarclaysTradeStore/src/main/java/com/barclays/BarclaysTradeStoreApplication.java```
 
 All Junit test cases are present at:
 
-**BarclaysTradeStore/src/test/java/com/barclays/BarclaysTradeStore/BarclaysTradeStoreApplicationTests.java**
+```BarclaysTradeStore/src/test/java/com/barclays/BarclaysTradeStore/BarclaysTradeStoreApplicationTests.java```
 
 ## Testing
 
 Use Postman or similar application to send a HTTP POST request to the API endpoint with a raw JSON payload.
 
-API Endpoint: http://localhost:8080/api/v1/barclays/store/trades
-Type: HTTP POST
-Payload: JSON
+**API Endpoint**: http://localhost:8080/api/v1/barclays/store/trades
+
+**Type**: HTTP POST
+
+**Payload**: JSON
 
 Payload should be of the following format:
 

@@ -46,7 +46,7 @@ public class TradeStoreServiceImpl implements TradeStoreService {
 	 * 
 	 * If an existing trade has matured, expired flag is changed to Y.
 	 * 
-	 * Here, DB is accessed only once and all the trades in memory. This increases memory
+	 * Here, DB is accessed only once and all the trades are loaded in memory. It increases memory
 	 * usage. Also, the processing for finding greater and equal is done at application end.
 	 * This makes this method more costly at application end.
 	 * 
