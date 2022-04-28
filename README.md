@@ -93,7 +93,7 @@ This is a Maven project and uses Java 11. Load the code from **BarclaysTradeStor
 
 * Please use **BarclaysTradeStore/src/main/resources/table_creation.sql** file for creating and populating the MySQL database on your system.
 
-```
+~~~~sql
 drop database if exists barclays_db;
 create database barclays_db;
 use barclays_db;
@@ -116,11 +116,11 @@ insert into trade values (4, 'T1', 3, 'CP-3', 'B2', '2014-05-20', current_date()
 commit;
 
 select * from trade;
-```
+~~~~
 
 * MySQL related configuration is present in **BarclaysTradeStore/src/main/resources/application.properties**. Update the port, db name, username and password according to your MySQL settings.
 
-```
+~~~~
 # MySQL settings
 #Change these settings according to database you are using
 spring.datasource.url=jdbc:mysql://localhost:3306/barclays_db
@@ -142,7 +142,7 @@ API.TRADE_SUCCESS=Trade successfully added to the store.
 
 # Batch job sleep time, default value is 24 Hours or 86400000 (24*60*60*1000) ms
 BatchService.SLEEP_TIME=10000
-```
+~~~~
 
 * Start the application as a Java/SpringBoot application from your IDE.
 
@@ -166,7 +166,7 @@ Use Postman or similar application to send a HTTP POST request to the API endpoi
 
 Payload should be of the following format:
 
-```
+```json
 {
     "tradeId": "T3",
     "version": 1,
