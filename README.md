@@ -120,7 +120,7 @@ select * from trade;
 
 * MySQL related configuration is present in **BarclaysTradeStore/src/main/resources/application.properties**. Update the port, db name, username and password according to your MySQL settings.
 
-~~~~
+~~~~yaml
 # MySQL settings
 #Change these settings according to database you are using
 spring.datasource.url=jdbc:mysql://localhost:3306/barclays_db
