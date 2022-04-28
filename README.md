@@ -8,10 +8,10 @@ Consider a scenario where thousands of trades flows into one store. Assume any w
 
 | Trade Id | Version | Counter-Party Id | Book-Id | Maturity Date | Created Date | Expired |
 |----------|---------|------------------|---------|---------------|--------------|---------|
-| T1       | 1       | CP-1             | B1      | 20/05/2020    | <today date> | N       |
-| T2       | 2       | CP-2             | B1      | 20/05/2021    | <today date> | N       |
+| T1       | 1       | CP-1             | B1      | 20/05/2020    | today date   | N       |
+| T2       | 2       | CP-2             | B1      | 20/05/2021    | today date   | N       |
 | T2       | 1       | CP-1             | B1      | 20/05/2021    | 14/03/2015   | N       |
-| T3       | 3       | CP-3             | B2      | 20/05/2014    | <today date> | Y       |
+| T3       | 3       | CP-3             | B2      | 20/05/2014    | today date   | Y       |
 
 ### Requirements
 
