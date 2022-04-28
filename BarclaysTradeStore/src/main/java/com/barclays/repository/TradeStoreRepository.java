@@ -51,6 +51,13 @@ public interface TradeStoreRepository extends CrudRepository<Trade, Integer> {
 	 */
 	public Optional<Trade> findOneByTradeIdAndVersion(String tradeId, int version);
 	
-	
+	/** Finds all the trades that have maturity date of past and expired flag
+	 * set to 'N'.
+	 * 
+	 * 
+	 * @param today -- present day date.
+	 * @param expired -- N value of Expired enum.
+	 * @return -- List of Trade entities that match the mentioned criteria.
+	 */
 	public List<Trade> findByMaturityDateLessThanAndExpiredEquals(LocalDate today, Expired expired);
 }
