@@ -88,17 +88,14 @@ DB state after fresh trade is processed.
 
 ## Steps to execute
 
-```
 This is a Maven project and uses Java 11. Load the code from **BarclaysTradeStore** folder. Build it using Maven. Test cases are written which will get auto executed during the build phase.
-```
 
-```
-Please use **BarclaysTradeStore/src/main/resources/table_creation.sql** file for creating and populating the MySQL database on your system.
 
-MySQL related configuration is present in **BarclaysTradeStore/src/main/resources/application.properties**. Update the port, db name, username and password according to your MySQL settings.
-```
+* Please use **BarclaysTradeStore/src/main/resources/table_creation.sql** file for creating and populating the MySQL database on your system.
 
-Start the application as a Java/SpringBoot application from your IDE.
+* MySQL related configuration is present in **BarclaysTradeStore/src/main/resources/application.properties**. Update the port, db name, username and password according to your MySQL settings.
+
+* Start the application as a Java/SpringBoot application from your IDE.
 
 Entry point for the application is present at:
 
